@@ -148,6 +148,10 @@ header.fixed .brand-name a {
     padding: 10px;
 }
 
+.none {
+    display: none;
+}
+
 .panels .btn-panel a {
     display: inline-block;
     white-space: nowrap;
@@ -168,10 +172,91 @@ header.fixed .brand-name a {
     color: #333;
 }
 
+.mensaje-btn {
+    display: none;
+}
+
 .fondo-ola {
     margin-top: -60px;
 }
 
+
+@media only screen and (max-width: 767px) {
+    .home {
+        height: 40rem;
+    }
+    
+    .logos {
+        width: 110px;
+    }
+    
+    header {
+        padding: 13px;
+        position: fixed;
+        border: none;
+       /* border-bottom: 1px solid #000;*/
+    }
+    
+    .cv-btn a {
+        font-size: 11px;
+        padding: 10px;
+    }
+    
+    .panel {
+        max-width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .panel h2 {
+        font-size: 22px;
+    }
+    
+    .panels .btn-panel a {
+        font-size: 15px;
+        padding: 10px 30px;
+        font-weight: 500;
+    }
+    
+   /* .panel:last-child{
+        grid-row: 2/3;
+    }*/
+    
+    .images .panel {
+        flex-direction: column;
+    }
+    
+    .home .row {
+        transform: translateY(20%);
+    }
+
+    .images img {
+        width: 11rem;
+        border-radius: 10px;
+    }
+    
+    .peruano {
+        display: none;
+    }
+    
+    .none {
+        display: block;
+        text-transform: uppercase;
+    }
+    
+    .mensaje-btn {
+        display: block;
+    }
+    
+    .none-btn {
+        display: none;
+    }
+    
+    .fondo-ola {
+        margin-top: 70px;
+        height: 125px;
+    }
+}
 
 
 
