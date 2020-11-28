@@ -109,6 +109,8 @@ header.fixed .brand-name a {
     display: grid;
     place-items: center;
     display: flex;
+    position: relative;
+    z-index: 2;
 }
 
 .images {
@@ -177,7 +179,6 @@ header.fixed .brand-name a {
 }
 
 .fondo-ola {
-   /* margin-top: -60px;*/
     position: absolute;
     bottom: 0;
     left: 0;
