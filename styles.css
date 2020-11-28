@@ -203,7 +203,7 @@ header.fixed .brand-name a {
     
     header {
         padding: 13px;
-        position: fixed;
+       /* position: fixed;*/
         border: none;
        /* border-bottom: 1px solid #000;*/
     }
@@ -249,6 +249,7 @@ header.fixed .brand-name a {
     .none {
         display: block;
         text-transform: uppercase;
+        margin-top: -10px;
     }
     
     .mensaje-btn {
