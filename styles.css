@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1140px;
     margin: auto;
@@ -25,20 +29,25 @@ body {
     flex-wrap: wrap;
 }
 
-.section-title {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
+[alt='www.000webhost.com'] {
+    display: none;
 }
 
 header {
     position: absolute;
-   /* background-color: #000;*/
     left: 0px;
     right: 0px;
-  /*  border-bottom: 1px solid #423940;*/
-    padding: 20px 18px;
+    padding: 18px;
     z-index: 10;
+}
+
+.logos {
+    display: block;
+    width: 130px;
+}
+
+header .brand {
+    position: relative;
 }
 
 header.fixed {
@@ -61,32 +70,17 @@ header .row {
     justify-content: space-between;
     align-items: center;
 }
-/*
-header .brand-name a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 600;
-    color: #fcfcfc;
-    text-transform: uppercase;
-    cursor: pointer;
-    position: relative;
-}
-
-header.fixed .brand-name a {
-    color: #000;
-}*/
 
 .cv-btn a {
     border-radius: 8px;
     color: #fcfcfc;
     background: #333;
     padding: 14px;
-    text-decoration: none;
     display: inline-block;
+    cursor: pointer;
     font-size: 14px;
     font-weight: 580;
     transition: all .5s ease;
-    cursor: pointer;
 }
 
 .cv-btn a:hover {
@@ -116,7 +110,7 @@ header.fixed .brand-name a {
 }
 
 .images {
-    padding: 10px;
+    padding: 0px 20px;
 }
 
 .images img {
@@ -124,59 +118,64 @@ header.fixed .brand-name a {
     border-radius: 15px;
 }
 
-.center {
-    padding: 20px;
-}
-
 .panel {
     max-width: 40%;
+    margin-top: -40px;
+}
+
+.panel h1 {
+    font-size: 30px;
+    color: #fff;
 }
 
 .panel h2 {
-    font-size: 30px;
-    color: #fcfcfc;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+.panel h1,h2 {
+    margin-top: 5px;
 }
 
 .panel p {
-    margin-top: 5px;
-    color: #fcfcfc;
+    font-size: 16px;
+    line-height: 80px;
+    color: #fff;
 }
 
-.panel .panels p {
-    margin: -13px 0px;
-    color: #fcfcfc;
+.panel .btn-post {
+    padding: 5px 0px 0px;
 }
 
-.btn-post {
-    display: flex;
-    padding: 10px;
-}
-
-.none {
-    display: none;
-}
-
-.panels .btn-panel a {
+.panel .btn-post a {
     display: inline-block;
-    white-space: nowrap;
-    cursor: pointer;
+    background: transparent;
     border-radius: 10px;
+    margin-right: 25px;
+    cursor: pointer;
     color: #fcfcfc;
     border: 2px solid #fcfcfc;
     padding: 12px 38px;
-    text-decoration: none;
     font-size: 16px;
     font-weight: 520;
-    margin: 12px;
     transition: all .5s ease;
 }
 
-.panels .btn-panel a:hover {
+.panel .btn-post a:hover {
     background-color: #fcfcfc;
     color: #333;
 }
 
-.mensaje-btn {
+.none {
+    display: block;
+}
+
+.block {
+    display: none;
+}
+
+#mensaje {
     display: none;
 }
 
@@ -190,24 +189,20 @@ header.fixed .brand-name a {
 
 
 @media only screen and (max-width: 800px) {
-  /* .home {
-        height: 40rem;
-    }*/
-    
+
     .home .row {
         transform: translateY(25%);
         min-height: 70vh;
     }
-    
+   
     .logos {
         width: 110px;
     }
     
     header {
-        padding: 15px;
+       /* padding: 13px;*/
        /* position: fixed;*/
         border: none;
-       /* border-bottom: 1px solid #000;*/
     }
     
     .cv-btn a {
@@ -217,18 +212,44 @@ header.fixed .brand-name a {
     
     .panel {
         max-width: 100%;
-        font-size: 13px;
         text-align: center;
+        margin-top: 40px;
     }
     
+    .panel h1 {
+        font-size: 25px;
+    }
+    
+    .panel h1,h2 {
+        margin-top: 0px;
+    }
+
     .panel h2 {
-        font-size: 22px;
+        font-size: 13px;
     }
     
-    .panels .btn-panel a {
-        font-size: 15px;
+    .panel p {
+        font-size: 13px;
+    }
+    
+    .panel .btn-post {
+        padding: 25px 0px 25px 20px;
+        text-align: center;
+        display: flex;
+    }
+    
+    .panel .btn-post a {
+        font-size: 14px;
         padding: 10px 30px;
         font-weight: 500;
+    }
+    
+    #mensaje-none {
+        display: none;
+    }
+    
+    #mensaje {
+        display: block;
     }
     
    /* .panel:last-child{
@@ -244,29 +265,22 @@ header.fixed .brand-name a {
         border-radius: 10px;
     }
     
-    .peruano {
-        display: none;
-    }
-    
     .none {
-        display: block;
-        text-transform: uppercase;
-        margin-top: -10px;
-    }
-    
-    .mensaje-btn {
-        display: block;
-    }
-    
-    .none-btn {
         display: none;
     }
     
-    .panels {
-        margin-top: -15px;
+    .block {
+        display: block;
+        margin-top: -35px;
     }
-    
 }
+
+
+
+
+
+
+
 
 
 
