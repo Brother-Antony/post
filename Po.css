@@ -84,7 +84,7 @@ p {
 
 .section-title h1 {
     display: inline-block;
-    font: 700 45px / 56px Poppins, Helvetica, Arial, sans-serif;
+    font: 700 35px / 56px Poppins, Helvetica, Arial, sans-serif;
     letter-spacing: -1px;
     color: #000000;
     position: relative;
@@ -254,7 +254,7 @@ p {
     background-repeat: no-repeat;
     border-radius: 12px 12px 0px 0px;
     overflow: hidden;
-    z-index: 5;
+    opacity: 0.5;
 }
 
 .portada2:before {
@@ -302,7 +302,7 @@ p {
 
 .game:hover .rank {
     z-index: 10;
-    transform: translate(150%, -57.3%);
+    transform: translate(150%, -55%);
 }
 
 .game:hover .front {
