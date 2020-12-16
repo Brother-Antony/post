@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0;
-    background: #fcfcfc;
+    background-color: #ebebec;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -29,12 +29,9 @@ a {
     flex-wrap: wrap;
 }
 
-[alt='www.000webhost.com'] {
-    display: none;
-}
-
 header {
     position: absolute;
+    border: none;
     left: 0px;
     right: 0px;
     padding: 18px;
@@ -51,7 +48,7 @@ header .brand {
 }
 
 header.fixed {
-    background-color: #fcfcfc;
+    background-color: #ebebec;
     position: fixed;
     border-color: #eeeeee;
     animation: fixHeader .5s ease;
@@ -73,8 +70,9 @@ header .row {
 
 .cv-btn a {
     border-radius: 8px;
-    color: #fcfcfc;
-    background: #333;
+    color: #ebebec;
+    /*background-color: #d0cecd;*/
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 14px;
     display: inline-block;
     cursor: pointer;
@@ -84,7 +82,7 @@ header .row {
 }
 
 .cv-btn a:hover {
-    background-color: #ebebec;
+    background-color: #a5a2a1;
     color: #000;
 }
 
@@ -125,12 +123,12 @@ header .row {
 
 .panel h1 {
     font-size: 30px;
-    color: #fff;
+    color: #ebebec;
 }
 
 .panel h2 {
     font-weight: 400;
-    color: #fff;
+    color: #ebebec;
     font-size: 16px;
 }
 
@@ -141,7 +139,7 @@ header .row {
 .panel p {
     font-size: 16px;
     line-height: 80px;
-    color: #fff;
+    color: #ebebec;
 }
 
 .panel .btn-post {
@@ -154,8 +152,8 @@ header .row {
     border-radius: 10px;
     margin-right: 25px;
     cursor: pointer;
-    color: #fcfcfc;
-    border: 2px solid #fcfcfc;
+    color: #ebebec;
+    border: 2px solid #ebebec;
     padding: 12px 38px;
     font-size: 16px;
     font-weight: 520;
@@ -163,7 +161,7 @@ header .row {
 }
 
 .panel .btn-post a:hover {
-    background-color: #fcfcfc;
+    background-color: #ebebec;
     color: #333;
 }
 
@@ -184,11 +182,27 @@ header .row {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    /*height: 100px;*/
+    background-image: url(https://d12xoj7p9moygp.cloudfront.net/images/profile/heading-bg-wave-desktop.svg);
+    background-repeat: repeat-x; 
+    background-position-y: 230px;
+    background-position-x: center;
+    background-size: 2124px 300px;
+    height: 525px;
 }
 
 
-@media only screen and (max-width: 800px) {
+/*-------- start about me ------*/
+.about-me {
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 935px) {
 
     .home .row {
         transform: translateY(25%);
@@ -197,12 +211,6 @@ header .row {
    
     .logos {
         width: 110px;
-    }
-    
-    header {
-       /* padding: 13px;*/
-       /* position: fixed;*/
-        border: none;
     }
     
     .cv-btn a {
@@ -273,7 +281,82 @@ header .row {
         display: block;
         margin-top: -35px;
     }
+
+    .fondo-ola {
+        background-size: 500px 522px;
+        height: 525px;
+    }
 }
+
+@media only screen and (max-width: 360px) {
+    .logos {
+        width: 98px;
+    }
+    
+    .cv-btn a {
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .panel h1 {
+        font-size: 20px;
+    }
+
+    .panel h2 {
+        font-size: : 10px;
+    }
+    
+    .panel p {
+        font-size: 10px;
+    }
+    
+    .panel .btn-post a {
+        font-size: 12px;
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .logos {
+        width: 80px;
+    }
+    
+    .cv-btn a {
+        font-size: 9px;
+        padding: 8px 10px;
+    }
+
+    .images img {
+        width: 8rem;
+    }
+    
+    .panel h1 {
+        font-size: 17px;
+    }
+
+    .panel h2 {
+        font-size: 10px;
+    }
+    
+    .panel p {
+        font-size: 10px;
+    }
+    
+    /*.panel .btn-post {
+        padding: 25px 0px 25px 20px;
+        background: red;
+        text-align: center;
+        display: flex;
+    }*/
+    
+    .panel .btn-post a {
+        font-size: 10px;
+        padding: 9px 20px;
+        font-weight: 600;
+    }
+}
+
 
 
 
