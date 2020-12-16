@@ -254,7 +254,7 @@ p {
     background-repeat: no-repeat;
     border-radius: 12px 12px 0px 0px;
     overflow: hidden;
-    opacity: 0.5;
+    z-index: 5;
 }
 
 .portada2:before {
@@ -302,7 +302,7 @@ p {
 
 .game:hover .rank {
     z-index: 10;
-    transform: translate(150%, -55%);
+    transform: translate(150%, -57.3%);
 }
 
 .game:hover .front {
