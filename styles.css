@@ -1,0 +1,376 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #ebebec;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    position: absolute;
+    border: none;
+    left: 0px;
+    right: 0px;
+    padding: 18px;
+    z-index: 10;
+}
+
+.logos {
+    display: block;
+    width: 130px;
+}
+
+header .brand {
+    position: relative;
+}
+
+header.fixed {
+    background-color: #ebebec;
+    position: fixed;
+    border-color: #eeeeee;
+    animation: fixHeader .5s ease;
+}
+
+@keyframes fixHeader {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(-0%);
+    }
+}
+
+header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-btn a {
+    border-radius: 8px;
+    color: #ebebec;
+    /*background-color: #d0cecd;*/
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 14px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 580;
+    transition: all .5s ease;
+}
+
+.cv-btn a:hover {
+    background-color: #a5a2a1;
+    color: #000;
+}
+
+/* home */
+.home{
+    /*height: 32.4rem;*/
+    height: 100vh;
+    background-image: url(https://i.ibb.co/XCRfJ5F/Pics-Art-11-23-02-48-04.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .row {
+    justify-content: center;
+ /*   transform: translateY(-30%);*/
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.images {
+    padding: 0px 20px;
+}
+
+.images img {
+    width: 17rem;
+    border-radius: 15px;
+}
+
+.panel {
+    max-width: 40%;
+    margin-top: -40px;
+}
+
+.panel h1 {
+    font-size: 30px;
+    color: #ebebec;
+}
+
+.panel h2 {
+    font-weight: 400;
+    color: #ebebec;
+    font-size: 16px;
+}
+
+.panel h1,h2 {
+    margin-top: 5px;
+}
+
+.panel p {
+    font-size: 16px;
+    line-height: 80px;
+    color: #ebebec;
+}
+
+.panel .btn-post {
+    padding: 5px 0px 0px;
+}
+
+.panel .btn-post a {
+    display: inline-block;
+    background: transparent;
+    border-radius: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+    color: #ebebec;
+    border: 2px solid #ebebec;
+    padding: 12px 38px;
+    font-size: 16px;
+    font-weight: 520;
+    transition: all .5s ease;
+}
+
+.panel .btn-post a:hover {
+    background-color: #ebebec;
+    color: #333;
+}
+
+.none {
+    display: block;
+}
+
+.block {
+    display: none;
+}
+
+#mensaje {
+    display: none;
+}
+
+.fondo-ola {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /*height: 100px;*/
+    background-image: url(https://d12xoj7p9moygp.cloudfront.net/images/profile/heading-bg-wave-desktop.svg);
+    background-repeat: repeat-x; 
+    background-position-y: 230px;
+    background-position-x: center;
+    background-size: 2124px 300px;
+    height: 525px;
+}
+
+
+/*-------- start about me ------*/
+.about-me {
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 935px) {
+
+    .home .row {
+        transform: translateY(25%);
+        min-height: 70vh;
+    }
+   
+    .logos {
+        width: 110px;
+    }
+    
+    .cv-btn a {
+        font-size: 11px;
+        padding: 10px;
+    }
+    
+    .panel {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .panel h1 {
+        font-size: 25px;
+    }
+    
+    .panel h1,h2 {
+        margin-top: 0px;
+    }
+
+    .panel h2 {
+        font-size: 13px;
+    }
+    
+    .panel p {
+        font-size: 13px;
+    }
+    
+    .panel .btn-post {
+        padding: 25px 0px 25px 20px;
+        text-align: center;
+        display: flex;
+    }
+    
+    .panel .btn-post a {
+        font-size: 14px;
+        padding: 10px 30px;
+        font-weight: 500;
+    }
+    
+    #mensaje-none {
+        display: none;
+    }
+    
+    #mensaje {
+        display: block;
+    }
+    
+   /* .panel:last-child{
+        grid-row: 2/3;
+    }*/
+    
+    .images .panel {
+        flex-direction: column;
+    }
+    
+    .images img {
+        width: 11rem;
+        border-radius: 10px;
+    }
+    
+    .none {
+        display: none;
+    }
+    
+    .block {
+        display: block;
+        margin-top: -35px;
+    }
+
+    .fondo-ola {
+        background-size: 500px 522px;
+        height: 525px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .logos {
+        width: 98px;
+    }
+    
+    .cv-btn a {
+        font-size: 10px;
+        padding: 10px;
+    }
+    
+    .panel h1 {
+        font-size: 20px;
+    }
+
+    .panel h2 {
+        font-size: : 10px;
+    }
+    
+    .panel p {
+        font-size: 10px;
+    }
+    
+    .panel .btn-post a {
+        font-size: 12px;
+        padding: 10px 30px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 335px) {
+    .logos {
+        width: 80px;
+    }
+    
+    .cv-btn a {
+        font-size: 9px;
+        padding: 8px 10px;
+    }
+
+    .images img {
+        width: 8rem;
+    }
+    
+    .panel h1 {
+        font-size: 17px;
+    }
+
+    .panel h2 {
+        font-size: 10px;
+    }
+    
+    .panel p {
+        font-size: 10px;
+    }
+    
+    /*.panel .btn-post {
+        padding: 25px 0px 25px 20px;
+        background: red;
+        text-align: center;
+        display: flex;
+    }*/
+    
+    .panel .btn-post a {
+        font-size: 10px;
+        padding: 9px 20px;
+        font-weight: 600;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
