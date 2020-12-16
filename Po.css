@@ -242,12 +242,12 @@ p {
     opacity: 0;
 }
 
-.background::before {
+.background:before {
     content: "";
     display: block;
     position: absolute;
     inset: 0px;
-    background-image: url(https://i.ibb.co/XCRfJ5F/Pics-Art-11-23-02-48-04.jpg);
+    background-image: url(https://i.ibb.co/ZKt9bLC/Y1.jpg);
     background-size: 100%;
     height: 80px;
     background-position: center top;
@@ -257,42 +257,42 @@ p {
     opacity: 0.5;
 }
 
-.portada2::before {
+.portada2:before {
     background-image: url(https://i.ibb.co/VwYHxDD/Y2.jpg);
 }
 
-.portada3::before {
+.portada3:before {
     background-image: url(https://i.ibb.co/twR2rrk/Y3.jpg);
 }
 
-.portada4::before {
+.portada4:before {
     background-image: url(https://i.ibb.co/FB88nrD/Y4.jpg);
 }
 
-.portada5::before {
+.portada5:before {
     background-image: url(https://i.ibb.co/V3FFS5d/Y5.jpg);
 }
 
-.portada6::before {
+.portada6:before {
     background-image: url(https://i.ibb.co/cxH11Xf/Y6.jpg);
 }
 
-.portada7::before {
+.portada7:before {
     background-image: url(https://i.ibb.co/Z2vGQmG/Y7.jpg);
 }
-.portada8::before {
+.portada8:before {
     background-image: url(https://i.ibb.co/Kj4KhKm/Y8.jpg);
 }
 
-.portada9::before {
+.portada9:before {
     background-image: url(https://i.ibb.co/FnJcM48/Y9.jpg);
 }
 
-.portada10::before {
+.portada10:before {
     background-image: url(https://i.ibb.co/kQhkRC7/Y10.jpg);
 }
 
-.portada11::before {
+.portada11:before {
     background-image: url(https://i.ibb.co/8mryGmB/Y11.jpg);
 }
 
