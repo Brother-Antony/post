@@ -79,7 +79,7 @@ p {
 .section-title {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 22px;
 }
 
 .section-title h1 {
@@ -302,7 +302,11 @@ p {
 
 .game:hover .rank {
     z-index: 10;
-    transform: translate(150%, -55%);
+    transform: translate(150%, -56.8%);
+}
+
+.game:hover .rank10 {
+    transform: translate(126%, -56.8%);
 }
 
 .game:hover .front {
@@ -372,10 +376,73 @@ p {
 }
 
 
-@media only screen and (max-width: 612px){
+
+
+/* start footer */
+footer {
+    padding: 70px 15px;
+    background-color: #22262b;
+}
+
+footer .logo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #dadada;
+    font-weight: 700;
+}
+
+footer .text-footer{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 1rem;
+    color: #999999;
+}
+
+footer .social {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer .social a {
+    color: #999999;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 12px;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    color: #fcfcfc;
+}
+
+.copyright {
+    background-color: #22262b;
+    border-top: 1px solid #373a3e;
+    padding: 15px;
+}
+
+.copyright p {
+    color: #838383;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 467px){
     /*.game {
         flex-grow: 0.2;
     }*/
+
+    .section-title h1 {
+        font-size: 30px;
+    }
 }
 
 
